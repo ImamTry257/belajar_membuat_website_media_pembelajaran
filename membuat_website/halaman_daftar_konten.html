@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Halaman Daftar Konten</title>
+
+	<style type="text/css">
+		
+		body {
+			background-color: #ededed;
+			font-family: sans-serif;
+		}
+		
+		.pembungkus_header {
+			background-color: #51BD7C;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			height: 100px;
+		}
+
+		.pembungkus_logo {
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		.pembungkus_logo a {
+			background-color: #FBBD9A;
+			padding-top: 20px;
+			padding-right: 50px;
+			padding-bottom: 20px;
+			padding-left: 50px;
+		}
+
+		.pembungkus_list_menu {
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		.pembungkus_list_menu .list_menu_header {
+			list-style: none;
+			display: inline-block;
+		}
+
+		.list_menu_header .menu_home_header,
+		.list_menu_header .menu_konten_header {
+			float: left;
+			padding-right: 50px;
+			color: white;
+		}
+
+		.pembungkus_login {
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		.pembungkus_login a {
+			background-color: #FBBD9A;
+			padding-top: 20px;
+			padding-right: 50px;
+			padding-bottom: 20px;
+			padding-left: 50px;
+			border-radius: 10px;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+
+
+		/*	pembungkus banner  */
+		.pembungkus_banner {
+/*			background-image: url('banner.jpg');*/
+		}
+
+		.pembungkus_banner img {
+			width: 100%;
+			height: 500px;
+		}
+
+
+		/*	pembungkus kontak dan alamat  */
+		.pembungkus_kontak_alamat {
+			background-color: #51BD7C;
+
+			display: grid;
+			grid-template-columns: auto auto auto;
+
+			margin-top: 100px;
+
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		.detail_alamat, 
+		.detail_email,
+		.list_alternatif_menu .menu_home_alternatif,
+		.list_alternatif_menu .menu_konten_alternatif {
+			color: white;
+		}
+
+		.pembungkus_alamat {
+			margin-left: 50px;
+		}
+
+
+		/* 	pembungkus footer  */
+		.pembungkus_footer {
+			background-color: #3A7853;
+
+			padding-top: 25px;
+			padding-bottom: 25px;
+
+			text-align: center;
+		}
+
+
+		.copyright {
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+
+		.title_kontak_alamat {
+			color: white;
+		}
+
+
+		/*	pembungkus daftar konten  */
+		.pembungkus_daftar_konten {
+			margin-top: 100px;
+			margin-right: 50px;
+			margin-left: 50px;
+		}
+
+		.pembungkus_pertama,
+		.pembungkus_kedua,
+		.pembungkus_ketiga {
+			display: grid;
+			grid-template-columns: auto auto auto;
+
+			margin-bottom: 50px;
+		}
+
+		.pembungkus_sd img,
+		.pembungkus_smp img,
+		.pembungkus_sma img {
+			width: 80%;
+			border-radius: 10px;
+		}
+
+		.pembungkus_smp {
+			margin-right: 10px;
+			margin-left: 10px;
+		}
+
+		.pembungkus_sd p,
+		.pembungkus_smp p,
+		.pembungkus_sma p {
+			font-size: 12px;
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- Membuat Header -->
+	<!-- pembungkus header -->
+	<div class="pembungkus_header">
+		
+		<!-- pembungkus logo -->
+		<div class="pembungkus_logo">
+			<a href="">Logo</a>
+		</div>
+
+		<!-- pembungkus list menu -->
+		<div class="pembungkus_list_menu">
+			
+			<ul class="list_menu_header">
+				<li class="menu_home_header">
+					<a href="halaman_utama.html"> Home </a>
+				</li>
+				<li class="menu_konten_header">
+					<a href="halaman_daftar_konten.html"> Konten </a>
+				</li>
+			</ul>
+
+		</div>
+
+		<!-- pembungkus tombol login -->
+		<div class="pembungkus_login">
+			<a href="">Login</a>
+		</div>
+
+	</div>
+
+
+	<!-- Membuat Banner -->
+	<!-- pembungkus banner -->
+	<div class="pembungkus_banner">
+		
+		<img src="banner.jpg">
+
+	</div>
+
+
+	<!-- pembungkus daftar konten -->
+	<div class="pembungkus_daftar_konten">
+		
+		<h1>Daftar Konten</h1>
+
+		<!-- pembungkus pertama -->
+		<div class="pembungkus_pertama">
+
+			<!-- pembungkus sd -->
+			<div class="pembungkus_sd">
+				
+				<img src="materi1.jpg">
+
+				<p>Judul Konten SD Kelas 1</p>
+				<p>SD</p>
+
+			</div>
+
+			<!-- pembungkus smp -->
+			<div class="pembungkus_smp">
+				
+				<img src="materi2.jpg">
+
+				<p>Judul Konten SMP Kelas 1</p>
+				<p>SMP</p>
+
+			</div>
+
+
+			<!-- pembungkus sma -->
+			<div class="pembungkus_sma">
+				
+				<img src="materi3.jpg">
+
+				<p>Judul Konten SMA Kelas 1</p>
+				<p>SMA</p>
+
+			</div>
+		</div>
+
+
+		<!-- pembungkus kedua -->
+		<div class="pembungkus_kedua">
+
+			<!-- pembungkus sd -->
+			<div class="pembungkus_sd">
+				
+				<img src="materi1.jpg">
+
+				<p>Judul Konten SD Kelas 2</p>
+				<p>SD</p>
+
+			</div>
+
+
+			<!-- pembungkus smp -->
+			<div class="pembungkus_smp">
+				
+				<img src="materi2.jpg">
+
+				<p>Judul Konten SMP Kelas 2</p>
+				<p>SMP</p>
+
+			</div>
+
+			<!-- pembungkus sma -->
+			<div class="pembungkus_sma">
+
+				<img src="materi3.jpg">
+				
+				<p>Judul Konten SMA Kelas 2</p>
+				<p>SMA</p>
+			</div>
+			
+		</div>
+
+
+		<!-- pembungkus ketiga -->
+		<div class="pembungkus_ketiga">
+			
+			<!-- pembungkus sd -->
+			<div class="pembungkus_sd">
+				
+				<img src="materi1.jpg">
+
+				<p>Judul Konten SD Kelas 3</p>
+				<p>SD</p>
+
+			</div>
+
+
+			<!-- pembungkus smp -->
+			<div class="pembungkus_smp">
+				
+				<img src="materi2.jpg">
+
+				<p>Judul Konten SMP Kelas 3</p>
+				<p>SMP</p>
+
+			</div>
+
+			<!-- pembungkus sma -->
+			<div class="pembungkus_sma">
+
+				<img src="materi3.jpg">
+				
+				<p>Judul Konten SMA Kelas 3</p>
+				<p>SMA</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- pembungkus kontak dan alamat -->
+	<div class="pembungkus_kontak_alamat">
+		
+		<!-- pembungkus alamat -->
+		<div class="pembungkus_alamat">
+			
+			<h2 class="title_kontak_alamat">BelajarYuk</h2>
+
+			<p class="detail_alamat">Jalan Gejayan, Depok, Sleman, DIY</p>
+
+		</div>
+
+		<!-- pembungkus daftar menu -->
+		<div class="pembungkus_daftar_menu">
+			
+			<h2 class="title_kontak_alamat">Menu</h2>
+
+			<ul class="list_alternatif_menu">
+				<li class="menu_home_alternatif">Home</li>
+				<li class="menu_konten_alternatif">Konten</li>
+			</ul>
+
+		</div>
+
+		<!-- pembungkus kontak -->
+		<div class="pembungkus_kontak">
+			
+			<h2 class="title_kontak_alamat">Kontak Kami</h2>
+
+			<p class="detail_email">belajaryuk@gmail.com</p>
+
+		</div>
+
+	</div>
+
+
+	<!-- pembungkus footer -->
+	<div class="pembungkus_footer">
+		
+		<p class="copyright">© Copyright BelajarYuk 2023 All Rights Reserved</p>
+
+	</div>
+
+</body>
+</html>

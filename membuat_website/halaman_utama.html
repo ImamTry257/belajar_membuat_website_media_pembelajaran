@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Halaman Utama</title>
+
+	<style type="text/css">
+
+		body {
+			background-color: #ededed;
+			font-family: sans-serif;
+		}
+		
+		.pembungkus_header {
+			background-color: #51BD7C;
+			display: grid;
+			grid-template-columns: auto auto auto;
+			height: 100px;
+		}
+
+		.pembungkus_logo {
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		.pembungkus_logo a {
+			background-color: #FBBD9A;
+			padding-top: 20px;
+			padding-right: 50px;
+			padding-bottom: 20px;
+			padding-left: 50px;
+		}
+
+		.pembungkus_list_menu {
+			text-align: center;
+			padding-top: 20px;
+		}
+
+		.pembungkus_list_menu .list_menu_header {
+			list-style: none;
+			display: inline-block;
+		}
+
+		.list_menu_header .menu_home_header,
+		.list_menu_header .menu_konten_header {
+			float: left;
+			padding-right: 50px;
+			color: white;
+		}
+
+		.pembungkus_login {
+			text-align: center;
+			padding-top: 40px;
+		}
+
+		.pembungkus_login a {
+			background-color: #FBBD9A;
+			padding-top: 20px;
+			padding-right: 50px;
+			padding-bottom: 20px;
+			padding-left: 50px;
+			border-radius: 10px;
+		}
+
+		a {
+			text-decoration: none;
+			color: white;
+			font-weight: bold;
+		}
+
+
+		/*	pembungkus banner  */
+		.pembungkus_banner {
+/*			background-image: url('banner.jpg');*/
+		}
+
+		.pembungkus_banner img {
+			width: 100%;
+			height: 500px;
+		}
+
+
+		/*	pembungkus 3 banner kecil	*/
+
+		.pembungkus_banner_kecil {
+			display: grid;
+			grid-template-columns: auto auto auto;
+			padding-top: 100px;
+			padding-right: 100px;
+			padding-bottom: 100px;
+			padding-left: 100px;
+		}
+
+		.pembungkus_banner2 {
+			margin-right: 25px;
+			margin-left: 25px;
+		}
+
+		.pembungkus_banner1 img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_banner2 img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_banner3 img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+		
+		/*	pembungkus informasi	*/
+		.pembungkus_informasi {
+			background-color: #51BD7C;
+			text-align: center;
+		}
+
+		.pembungkus_heading {
+			padding-top: 50px;
+			padding-bottom: 30px;
+		}
+
+		h2 {
+			color: white;
+			font-size: 35px;
+		}
+
+		.pembungkus_3_informasi {
+			display: grid;
+			grid-template-columns: auto auto auto;
+		}
+
+		.pembungkus_pengunjung img {
+			width: 20%;
+		}
+
+		.pembungkus_konten img {
+			width: 20%;
+		}
+
+		.pembungkus_unduhan img {
+			width: 20%;
+		}
+
+		.pembungkus_pengunjung p {
+			color: white;
+			font-size: 24px;
+		}
+
+		.pembungkus_konten p {
+			color: white;
+			font-size: 24px;
+		}
+
+		.pembungkus_unduhan p {
+			color: white;
+			font-size: 24px;
+		}
+
+
+		/*	pembungkus terpopuler	*/
+		.pembungkus_terpopuler {
+			border: solid black 5px;
+			margin-top: 100px;
+			margin-left: 50px;
+			margin-right: 50px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_heading2 {
+			padding-top: 25px;
+			padding-left: 25px;
+		}
+
+		.pembungkus_heading2 h2 {
+			color: black;
+		}
+
+		.pembungkus_3_konten {
+			display: grid;
+			grid-template-columns: auto auto auto;
+
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+
+		.pembungkus_sd img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_smp img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_smp {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.pembungkus_sma img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+
+		/*	pembungkus kontak dan alamat  */
+		.pembungkus_kontak_alamat {
+			background-color: #51BD7C;
+
+			display: grid;
+			grid-template-columns: auto auto auto;
+
+			margin-top: 100px;
+
+			padding-top: 50px;
+			padding-bottom: 50px;
+		}
+
+		.detail_alamat, 
+		.detail_email,
+		.list_alternatif_menu .menu_home_alternatif,
+		.list_alternatif_menu .menu_konten_alternatif {
+			color: white;
+		}
+
+		.pembungkus_alamat {
+			margin-left: 50px;
+		}
+
+
+		/* 	pembungkus footer  */
+		.pembungkus_footer {
+			background-color: #3A7853;
+
+			padding-top: 25px;
+			padding-bottom: 25px;
+
+			text-align: center;
+		}
+
+
+		.copyright {
+			color: white;
+			font-size: 20px;
+			font-weight: bold;
+		}
+
+	</style>
+</head>
+<body>
+
+	<!-- Membuat Header -->
+	<!-- pembungkus header -->
+	<div class="pembungkus_header">
+		
+		<!-- pembungkus logo -->
+		<div class="pembungkus_logo">
+			<a href="">Logo</a>
+		</div>
+
+		<!-- pembungkus list menu -->
+		<div class="pembungkus_list_menu">
+			
+			<ul class="list_menu_header">
+				<li class="menu_home_header">
+					<a href="halaman_utama.html"> Home </a>
+				</li>
+				<li class="menu_konten_header">
+					<a href="halaman_daftar_konten.html"> Konten </a>
+				</li>
+			</ul>
+
+		</div>
+
+		<!-- pembungkus tombol login -->
+		<div class="pembungkus_login">
+			<a href="">Login</a>
+		</div>
+
+	</div>
+
+
+	<!-- Membuat Banner -->
+	<!-- pembungkus banner -->
+	<div class="pembungkus_banner">
+		
+		<img src="banner.jpg">
+
+	</div>
+
+
+	<!-- Membuat 3 bagian banner kecil -->
+	<div class="pembungkus_banner_kecil">
+		
+		<div class="pembungkus_banner1">
+			
+			<img src="feature1.jpg">
+
+		</div>
+
+		<div class="pembungkus_banner2">
+			
+			<img src="feature2.jpg">
+
+		</div>
+
+		<div class="pembungkus_banner3">
+			
+			<img src="feature3.jpg">
+
+		</div>
+
+	</div>
+
+
+	<!-- pembungkus informasi -->
+	<div class="pembungkus_informasi">
+		
+		<div class="pembungkus_heading">
+			
+			<h2>Jumlah Konten Berdasarkan Jenjang</h2>
+
+		</div>
+
+		<div class="pembungkus_3_informasi">
+			
+			<div class="pembungkus_pengunjung">
+				<img src="user.png">
+
+				<p>879</p>
+				<p>Total Pengunjung</p>
+			</div>
+
+			<div class="pembungkus_konten">
+				<img src="konten.png">
+
+				<p>879</p>
+				<p>Total Konten</p>
+			</div>
+
+
+			<div class="pembungkus_unduhan">
+				<img src="unduh.png">
+
+				<p>879</p>
+				<p>Total Unduhan</p>
+			</div>
+
+		</div>
+
+	</div>
+
+
+	<!-- pembungkus terpopuler -->
+	<div class="pembungkus_terpopuler">
+		
+		<div class="pembungkus_heading2">
+			
+			<h2>Konten Terpopuler</h2>
+
+		</div>
+
+
+		<div class="pembungkus_3_konten">
+
+			<div class="pembungkus_sd">
+				
+				<img src="materi1.jpg">
+
+				<p>Judul Konten SD</p>
+				<p>SD</p>
+			</div>
+
+
+			<div class="pembungkus_smp">
+				<img src="materi2.jpg">
+
+				<p>Judul Konten SMP</p>
+				<p>SMP</p>
+
+			</div>
+
+
+			<div class="pembungkus_sma">
+				<img src="materi3.jpg">
+
+				<p>Judul Konten SMA</p>
+				<p>SMA</p>
+			</div>
+			
+		</div>
+
+	</div>
+
+
+	<!-- pembungkus kontak dan alamat -->
+	<div class="pembungkus_kontak_alamat">
+		
+		<!-- pembungkus alamat -->
+		<div class="pembungkus_alamat">
+			
+			<h2>BelajarYuk</h2>
+
+			<p class="detail_alamat">Jalan Gejayan, Depok, Sleman, DIY</p>
+
+		</div>
+
+		<!-- pembungkus daftar menu -->
+		<div class="pembungkus_daftar_menu">
+			
+			<h2>Menu</h2>
+
+			<ul class="list_alternatif_menu">
+				<li class="menu_home_alternatif">Home</li>
+				<li class="menu_konten_alternatif">Konten</li>
+			</ul>
+
+		</div>
+
+		<!-- pembungkus kontak -->
+		<div class="pembungkus_kontak">
+			
+			<h2>Kontak Kami</h2>
+
+			<p class="detail_email">belajaryuk@gmail.com</p>
+
+		</div>
+
+	</div>
+
+
+	<!-- pembungkus footer -->
+	<div class="pembungkus_footer">
+		
+		<p class="copyright">© Copyright BelajarYuk 2023 All Rights Reserved</p>
+
+	</div>
+
+</body>
+</html>

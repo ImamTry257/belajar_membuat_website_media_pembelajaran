@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Percabangan pada Javascript</title>
+</head>
+<body>
+   
+    <script>
+        // Contoh Implementasi Perulangan
+
+        // Perulangan memudahkan kita untuk membuat data yang akan kita tampilkan menjadi berulang
+        // Banyaknya perulangan bisa kita atur sesuai dengan kebutuhan
+
+        // Contoh Kasus
+        // Saya memiliki variabel dengan nama data_saya
+        var data_saya = 'ini data perulangan ke '
+        // Saya ingin menampilkan isi dari variabel data_saya sebanyak 15 kali, 
+        // maka saya bisa membuat percabangan
+        for ( var k = 1; k <= 15; k++ ) {
+            // tampilkan isi variabel
+            console.log(data_saya + k)
+        }
+
+        // disini kita bisa mengatur banyak nya perulangan dengan mengubah nilai 15 sesuai dengan kebutuhan.
+        // perlu diingat, karena javascript disini berjalan di browser, saya harap untuk tidak mengubah nilai perulangan di atas 5000
+
+    </script>
+</body>
+</html>

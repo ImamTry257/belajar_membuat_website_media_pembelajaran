@@ -1,0 +1,1 @@
+alert('Ini penulisan tipe eksternal pada Javascript')
