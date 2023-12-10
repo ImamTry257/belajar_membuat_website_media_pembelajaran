@@ -3,7 +3,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<title>Halaman Daftar Konten Media Pembelajaran</title>
+	<title>Halaman Detail Konten</title>
+
 
 	<style type="text/css">
 		
@@ -81,6 +82,125 @@
 		}
 
 
+		/*	pembungkus detail	*/
+		.pembungkus_detail {
+			margin-left: 50px;
+			margin-right: 50px;
+		}
+
+		.pembungkus_detail .detail-title {
+			font-size: 10px;
+		}
+
+		.pembungkus_detail .title-selected {
+			color: #599270;
+		}
+
+		.pembungkus_info_kategori {
+			display: grid;
+		    grid-template-columns: 55px 30px auto;
+		    align-items: center;
+		}
+
+		.pembungkus_info_kategori .nama_kategori{
+			padding-top: 5px;
+			padding-right: 10px;
+			padding-bottom: 5px;
+			padding-left: 10px;
+
+			background-color: #599270;
+			color: white;
+			font-weight: bold;
+			border-radius: 5px;
+		}
+
+		.pembungkus_detail_info {
+			display: grid;
+			grid-template-columns: auto auto;
+			margin-top: 40px;
+		}
+
+		.pembungkus_detail_info .pembungkus_tulisan_detail,
+		.pembungkus_detail_info .pembungkus_info_unggah {
+			background-color: #d4d4d4;
+
+			padding-left: 50px;
+			padding-right: 50px;
+
+			border-radius: 10px;
+
+			height: 300px;
+		}
+
+		.pembungkus_detail_info .pembungkus_tulisan_detail {
+			margin-right: 50px;
+		}
+
+		.pembungkus_info_unggah .unduh_konten {
+			text-align: center;
+
+			margin-top: 100px;
+		}
+
+		.pembungkus_info_unggah .unduh_konten a {
+			background-color: #599270;
+
+			padding: 20px 20px 20px 20px;
+			font-size: 25px;
+			border-radius: 10px;
+		}
+
+
+		/*	pembungkus terpopuler	*/
+		.pembungkus_terpopuler {
+			border: solid black 5px;
+			margin-top: 100px;
+			margin-left: 50px;
+			margin-right: 50px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_heading2 {
+			padding-top: 25px;
+			padding-left: 25px;
+		}
+
+		.pembungkus_heading2 h2 {
+			color: black;
+		}
+
+		.pembungkus_3_konten {
+			display: grid;
+			grid-template-columns: auto auto auto;
+
+			margin-left: 25px;
+			margin-right: 25px;
+		}
+
+		.pembungkus_sd img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_smp img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+		.pembungkus_smp {
+			margin-left: 20px;
+			margin-right: 20px;
+		}
+
+		.pembungkus_sma img {
+			width: 100%;
+			height: 200px;
+			border-radius: 10px;
+		}
+
+
 		/*	pembungkus kontak dan alamat  */
 		.pembungkus_kontak_alamat {
 			background-color: #51BD7C;
@@ -123,45 +243,10 @@
 			font-weight: bold;
 		}
 
-
 		.title_kontak_alamat {
 			color: white;
 		}
 
-
-		/*	pembungkus daftar konten  */
-		.pembungkus_daftar_konten {
-			margin-top: 100px;
-			margin-right: 50px;
-			margin-left: 50px;
-		}
-
-		.pembungkus_pertama,
-		.pembungkus_kedua,
-		.pembungkus_ketiga {
-			display: grid;
-			grid-template-columns: auto auto auto;
-
-			margin-bottom: 50px;
-		}
-
-		.pembungkus_sd img,
-		.pembungkus_smp img,
-		.pembungkus_sma img {
-			width: 80%;
-			border-radius: 10px;
-		}
-
-		.pembungkus_smp {
-			margin-right: 10px;
-			margin-left: 10px;
-		}
-
-		.pembungkus_sd p,
-		.pembungkus_smp p,
-		.pembungkus_sma p {
-			font-size: 12px;
-		}
 
 	</style>
 </head>
@@ -202,123 +287,92 @@
 	<!-- pembungkus banner -->
 	<div class="pembungkus_banner">
 		
-		<img src="banner.jpg">
+		<img src="materi3.jpg">
+
+	</div>
+
+	<!-- Membuat Konten Detail -->
+	<!-- pembungkus detail -->
+	<div class="pembungkus_detail">
+		
+		<p class="detail-title">Beranda > <span class="title-selected">Jenjang Konten SMA</span></p>
+
+		<h1>Jenjang Konten SMA</h1>
+
+		<div class="pembungkus_info_kategori">
+			<span class="nama_kategori">SMA</span>
+
+			<img src="user.png" width="20">
+
+			<span class="info_pembaca">46 Pembaca</span>
+		</div>
+
+
+		<div class="pembungkus_detail_info">
+			
+			<div class="pembungkus_tulisan_detail">
+				
+				<h1>Detail</h1>
+
+				<p>Rumus Bhaskara adalah metode penyelesaian persamaan digunakan untuk mencari akar dari koefisien.</p>
+
+			</div>
+
+			<div class="pembungkus_info_unggah">
+				
+				<h1>Pengunggah Konten</h1>
+
+				<p>Administrator</p>
+
+
+				<div class="unduh_konten">
+					<a href="">Unduh Konten</a>
+				</div>
+
+			</div>
+
+		</div>
 
 	</div>
 
 
-	<!-- pembungkus daftar konten -->
-	<div class="pembungkus_daftar_konten">
+	<!-- pembungkus terpopuler -->
+	<div class="pembungkus_terpopuler">
 		
-		<h1>Daftar Konten</h1>
+		<div class="pembungkus_heading2">
+			
+			<h2>Konten Terpopuler</h2>
 
-		<!-- pembungkus pertama -->
-		<div class="pembungkus_pertama">
-
-			<!-- pembungkus sd -->
-			<div class="pembungkus_sd">
-				
-				<img src="materi1.jpg">
-
-				<p>Judul Konten SD Kelas 1</p>
-				<p>SD</p>
-
-			</div>
-
-			<!-- pembungkus smp -->
-			<div class="pembungkus_smp">
-				
-				<img src="materi2.jpg">
-
-				<p>Judul Konten SMP Kelas 1</p>
-				<p>SMP</p>
-
-			</div>
-
-
-			<!-- pembungkus sma -->
-			<div class="pembungkus_sma">
-				
-				<img src="materi3.jpg">
-
-				<p>
-					<a href="halaman_detail_konten.html">Judul Konten SMA Kelas 1</a>
-				</p>
-				<p>SMA</p>
-
-			</div>
 		</div>
 
 
-		<!-- pembungkus kedua -->
-		<div class="pembungkus_kedua">
+		<div class="pembungkus_3_konten">
 
-			<!-- pembungkus sd -->
 			<div class="pembungkus_sd">
 				
 				<img src="materi1.jpg">
 
-				<p>Judul Konten SD Kelas 2</p>
+				<p>Judul Konten SD</p>
 				<p>SD</p>
-
 			</div>
 
 
-			<!-- pembungkus smp -->
 			<div class="pembungkus_smp">
-				
 				<img src="materi2.jpg">
 
-				<p>Judul Konten SMP Kelas 2</p>
+				<p>Judul Konten SMP</p>
 				<p>SMP</p>
 
 			</div>
 
-			<!-- pembungkus sma -->
-			<div class="pembungkus_sma">
 
+			<div class="pembungkus_sma">
 				<img src="materi3.jpg">
-				
-				<p>Judul Konten SMA Kelas 2</p>
+
+				<p>Judul Konten SMA</p>
 				<p>SMA</p>
 			</div>
 			
-		</div>
-
-
-		<!-- pembungkus ketiga -->
-		<div class="pembungkus_ketiga">
-			
-			<!-- pembungkus sd -->
-			<div class="pembungkus_sd">
-				
-				<img src="materi1.jpg">
-
-				<p>Judul Konten SD Kelas 3</p>
-				<p>SD</p>
-
-			</div>
-
-
-			<!-- pembungkus smp -->
-			<div class="pembungkus_smp">
-				
-				<img src="materi2.jpg">
-
-				<p>Judul Konten SMP Kelas 3</p>
-				<p>SMP</p>
-
-			</div>
-
-			<!-- pembungkus sma -->
-			<div class="pembungkus_sma">
-
-				<img src="materi3.jpg">
-				
-				<p>Judul Konten SMA Kelas 3</p>
-				<p>SMA</p>
-			</div>
-
 		</div>
 
 	</div>
@@ -340,7 +394,7 @@
 		<div class="pembungkus_daftar_menu">
 			
 			<h2 class="title_kontak_alamat">Menu</h2>
-
+ 
 			<ul class="list_alternatif_menu">
 				<li class="menu_home_alternatif">Home</li>
 				<li class="menu_konten_alternatif">Konten</li>
@@ -366,6 +420,7 @@
 		<p class="copyright">© Copyright BelajarYuk 2023 All Rights Reserved</p>
 
 	</div>
+
 
 </body>
 </html>
